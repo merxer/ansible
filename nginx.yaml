@@ -8,3 +8,8 @@
         name: nginx
         state: present
         update_cache: true
+    - name: Remove nginx package
+      apt:
+        name: nginx
+        state: absent
+        autoremove: yes
